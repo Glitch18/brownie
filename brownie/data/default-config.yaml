@@ -34,6 +34,9 @@ networks:
         default_contract_owner: false
 
 compiler:
+    
+    target: mainnet
+    
     evm_version: null
     solc:
         version: null

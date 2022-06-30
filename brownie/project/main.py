@@ -82,6 +82,11 @@ class _ProjectBase:
     _build: Build
 
     def _compile(self, contract_sources: Dict, compiler_config: Dict, silent: bool) -> None:
+        
+        if compiler_config["target"] == "starknet":
+            Pass 
+            # execute starknet compilation module
+        
         compiler_config.setdefault("solc", {})
 
         allow_paths = None
